@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Petit+Formal+Script|Nosifer|Flavors&subset=latin,latin-ext);
 
-/* menü stíluselemek */
+/* menÃ¼ stÃ­luselemek */
 
 #menu{
     font-family: 'Flavors', cursive;
@@ -27,10 +27,11 @@
     color: #f33;
 }
 #menu ul li#aktiv a{
-    color: #000;
+    color: #f66;
+    font-weight:bold;
 }
 
-/* tartalom stíluselemek */
+/* tartalom stÃ­luselemek */
 
 #tartalom{
     width: 780px;
@@ -49,10 +50,15 @@
     margin: 20px;
 }
 #tartalom table{
-    border: 0;
+    border-top:2px solid #ccc;
+    border-left:2px solid #ccc;
+    border-bottom:2px solid #999;
+    border-right:2px solid #999;
 }
 #tartalom table caption{
     font-size: 1.1em;
+    text-transform:uppercase;
+    letter-spacing:2em;
 }
 #tartalom table th{
     background-color: #eee;
@@ -64,11 +70,12 @@
 #tartalom .foglalas_urlap{
     width: 600px;
     padding: 5px;
-    margin: 0;
+    margin: 0 auto;
+    background-color:#eee;
 }
 
 
-/* fejléc stíluselemek */
+/* fejlÃ©c stÃ­luselemek */
 
 #fejlec{
     font-family: 'Flavors', cursive;
@@ -88,7 +95,7 @@
     padding-top: 20px;
 }
 
-/* lábléc stíluselemek */
+/* lÃ¡blÃ©c stÃ­luselemek */
 
 #lablec{
     height: 50px;
@@ -100,13 +107,16 @@
     text-align: center;
 }
 
-/* egyéb stíluselemek */
+/* egyÃ©b stÃ­luselemek */
 
 body{
     font-family: Arial, sans-serif;
     width: 960px;
     margin: 0 auto;
 }
+input[type=text]{
+    width:220px;
+    background-color:#ffe;
 a, a:link, a:visited{
     color: blue;
 }
