@@ -1,125 +1,139 @@
-@import url(http://fonts.googleapis.com/css?family=Petit+Formal+Script|Nosifer|Flavors&subset=latin,latin-ext);
-
-/* menÃ¼ stÃ­luselemek */
-
-#menu{
-    font-family: 'Flavors', cursive;
-    float: left;
-    width: 160px;
-    margin-top: 20px;
+body{
+    margin: 0;
+    font-family: sans-serif;
 }
-#menu h3{
-    font-size: 24px;
+
+/* fejléc (header) stíluselemek */
+
+#header{
+    width: 100%;
+    height: 58px;
+    background: url("esti_hatter.jpg") repeat;
+    color: white;
+}
+#header h1{
+    height: 58px;
+    letter-spacing: 25px;
+    margin: 0;
+    padding: 8px 0;
     text-align: center;
-    text-transform: capitalize;
 }
-#menu ul{
-    list-style-type: none;
+
+/* menü (nav) stíluselemek */
+
+#nav{
+    float: left;
+    margin-left: 0;
+    margin-right: -18%;
+    width: 16%;
+    background-color: #333;
+    border: solid 3px white;
 }
-#menu ul li{
-    font-size: 21px;
+
+#nav ul li{
+    padding: 10px 0;
+
 }
-#menu a, #menu a:link, #menu a:visited{
-    color: #900;
+#nav ul li.aktiv{
+    font-weight: bold;
+}
+#nav a,
+#nav a:link,
+#nav a:visited{
+    color: yellow;
     text-decoration: none;
 }
-#menu a:hover{
-    color: #f33;
-}
-#menu ul li#aktiv a{
-    color: #f66;
-    font-weight:bold;
+#nav a:hover{
+    text-decoration: underline;
 }
 
-/* tartalom stÃ­luselemek */
+/* táblázat stíluselemek */
 
-#tartalom{
-    width: 780px;
-    float: left;
-    margin-left: 20px;
-}
-#tartalom h3{
-    text-align: center;
-    font-size: 24px;
-}
-#tartalom h4{
-    font-size: 18px;
-}
-#tartalom .figure{
-    float: left;
-    margin: 20px;
-}
-#tartalom table{
-    border-top:2px solid #ccc;
-    border-left:2px solid #ccc;
-    border-bottom:2px solid #999;
-    border-right:2px solid #999;
-}
-#tartalom table caption{
-    font-size: 1.1em;
-    text-transform:uppercase;
-    letter-spacing:2em;
-}
-#tartalom table th{
-    background-color: #eee;
-    padding: 5px 10px;
-}
-#tartalom table td{
-    text-align: right;
-}
-#tartalom .foglalas_urlap{
-    width: 600px;
-    padding: 5px;
-    margin: 0 auto;
-    background-color:#eee;
-}
-
-
-/* fejlÃ©c stÃ­luselemek */
-
-#fejlec{
-    font-family: 'Flavors', cursive;
-    height: 50px;
-    background-color: #eee;
-}
-#fejlec h1{
-    font-size: 36px;
-    float: left;
-    padding: 0 10px;
-    margin: 0 40px 0 0;
-}
-#fejlec h2{
-    font-size: 18px;
-    clear: right;
+table{
     margin: 0;
-    padding-top: 20px;
+    padding: 0;
+    border-collapse: collapse;
+    background-color: #fff0f0;
+    width: 500px;
+}
+table caption{
+    font-size: 22px;
+    padding: 5px;
+    border: solid 1px #fcc;
+    background-color: white;
+}
+table th{
+    padding: 5px 10px;
+    
+}
+table td{
+    padding: 5px;
+    border: dashed 1px #fcc;
+}
+.aside table{
+    border: solid 2px blue;
+}
+.aside table caption{
+    color: red;
+    padding: 5px;
+    font-weight: bold;
+}
+.aside table th{
+    background-color: #ffc;
+    color: #66f;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.aside table td{
+    background-color: #fff;
+    color: #666;
+    padding-left: 10px;
 }
 
-/* lÃ¡blÃ©c stÃ­luselemek */
+/* ûrlap stíluselemek */
 
-#lablec{
-    height: 50px;
-    background-color: #eee;
+form fieldset{
+    width: 500px;
+    padding: 5px;
+    margin: 5px;
+}
+form fieldset input[type='text']{
+    width: 450px;
+}
+
+
+/* egyéb stíluselemek */
+
+a, a:link, a:visited{
+    text-decoration: none;
+    color: red;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+
+
+#main{
+    float: left;
+    margin-left: 19%;
+    padding: 5px;
+    width: 80%;
+    
+}
+#main .article p img{
+    float: right; 
+    padding: 10px; 
+}
+#main .aside p img{
+    border: solid 1px #666;
+}
+
+#footer{
+    clear: both;
+    background-color: #333;
     color: #999;
-}
-#lablec p{
-    padding: 10px;
+    height: 25px;
     text-align: center;
 }
 
-/* egyÃ©b stÃ­luselemek */
-
-body{
-    font-family: Arial, sans-serif;
-    width: 960px;
-    margin: 0 auto;
-}
-input[type=text]{
-    width:220px;
-    background-color:#ffe;
-a, a:link, a:visited{
-    color: blue;
-}
-.clear{
-    clear: both;
-}
